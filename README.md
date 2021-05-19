@@ -7,8 +7,8 @@ For Node - [npm: fluent-ffmpeg](https://www.npmjs.com/package/fluent-ffmpeg)
 For Dotnet - [Retyped.fluent-ffmpeg 2.1.6733](https://www.nuget.org/packages/Retyped.fluent-ffmpeg)
 
 - Convert audio(.wav) to srt using vosk [alphacep/vosk-api](https://github.com/alphacep/vosk-api/)
-Vosk requires a language model for conversion.
-All available models are listed here [VOSK Models](https://alphacephei.com/vosk/models).
+NOde Package - [Vosk](https://www.npmjs.com/package/vosk)
+Vosk requires a language model for conversion. All available models are listed here [VOSK Models](https://alphacephei.com/vosk/models).
 The most accurate model for english is of 1GB
 Demo for Node - <https://github.com/alphacep/vosk-api/tree/master/nodejs>
 
