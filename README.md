@@ -7,7 +7,7 @@ For Node - [npm: fluent-ffmpeg](https://www.npmjs.com/package/fluent-ffmpeg)
 For Dotnet - [Retyped.fluent-ffmpeg 2.1.6733](https://www.nuget.org/packages/Retyped.fluent-ffmpeg)
 
 - Convert audio(.wav) to srt using vosk [alphacep/vosk-api](https://github.com/alphacep/vosk-api/)
-NOde Package - [Vosk](https://www.npmjs.com/package/vosk)
+Node Package - [Vosk](https://www.npmjs.com/package/vosk)
 Vosk requires a language model for conversion. All available models are listed here [VOSK Models](https://alphacephei.com/vosk/models).
 The most accurate model for english is of 1GB
 Demo for Node - <https://github.com/alphacep/vosk-api/tree/master/nodejs>
@@ -19,17 +19,7 @@ For this POC, I have been using NodeJS.
 Both Vosk and FFMPEG have are available in Dotner(C#) as well.
 
 > **Note:**
-Vosk requires FFI-NAPI and node-gyp support. And also Python 2.7
-
->If you haven't got python installed along with all the node-gyp dependencies, simply open Powershell or Git Bash with administrator privileges and execute:
-    ```
-    npm install --global --production windows-build-tools
-    ```
-> and then to install the package:
-    ```
-    npm install --global node-gyp
-    ```
-> once installed, you will have all the node-gyp dependencies downloaded, but you still need the environment variable. Validate Python is indeed found in the correct folder:
-
-> C:\Users\ben\.windows-build-tools\python27\python.exe
-It uses python 2.7 not 3.x as it is not supported*
+Vosk requires FFI-NAPI and node-gyp support. It uses python 2.7 not 3.x as it is not supported.
+If facing NPM install issues in Vosk, look here -
+[npm install not installing because of node-gyp](https://stackoverflow.com/a/57763427/7649033)
+[how-can-i-solve-error-gypgyp-errerr-find-vsfind-vs-msvs-version-not-set-from-c](https://stackoverflow.com/a/59882818/7649033)
