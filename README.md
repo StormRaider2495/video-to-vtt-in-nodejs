@@ -23,3 +23,10 @@ Vosk requires FFI-NAPI and node-gyp support. It uses python 2.7 not 3.x as it is
 If facing NPM install issues in Vosk, look here -
 [npm install not installing because of node-gyp](https://stackoverflow.com/a/57763427/7649033)
 [how-can-i-solve-error-gypgyp-errerr-find-vsfind-vs-msvs-version-not-set-from-c](https://stackoverflow.com/a/59882818/7649033)
+
+```sh
+I faced a similar issue. As a workaround I installed the 4.0.0 version
+npm install --global --production windows-build-tools@4.0.0
+and then run the original one
+npm install -g --production windows-build-tools, and it completed
+```
